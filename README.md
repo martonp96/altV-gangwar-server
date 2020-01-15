@@ -34,6 +34,7 @@ resources: [
 ]
 ```
 
+### Important
 Make sure to check out `server/config.mjs` to change everything you want to. For example: Add a gang to the `teamData` object and the gang will be implemented automatically. There is no need to change anything else. Spawn, vehicle spawner, select team webview, teams overview... everything will be changed. Or if you want to change the weapons a player gets on spawn just change the `weapons` array. You can also change the handling of a vehicle by modifying the `vehicleTuning` object. Just make sure to look at the file.
 
 Also make sure to add your socialId to the `admins` array. You will see your socialId in the console when you connect to the server.
