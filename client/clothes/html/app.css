@@ -1,0 +1,55 @@
+:root {
+    --red: rgb(182, 26, 26);
+    --green: rgb(18, 158, 30);
+}
+@font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../_html/font/varela-round-v12-latin-regular.eot');
+    src: local('Varela Round Regular'), local('VarelaRound-Regular'),
+         url('../../_html/font/varela-round-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../../_html/font/varela-round-v12-latin-regular.woff2') format('woff2'),
+         url('../../_html/font/varela-round-v12-latin-regular.woff') format('woff'),
+         url('../../_html/font/varela-round-v12-latin-regular.ttf') format('truetype'),
+         url('../../_html/font/varela-round-v12-latin-regular.svg#VarelaRound') format('svg');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1vw;
+}
+::selection { background: transparent; } ::-moz-selection { background: transparent; }
+#clothes {
+    width: 30vw;
+    margin: 1vw 0 0 1vw;
+    padding: .5vw;
+    background-color: #000;
+    color: #FFF;
+}
+#clothes > h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+.component {
+    display: flex;
+    flex-direction: row;
+}
+.component > div {
+    width: 40%;
+}
+.component > div:nth-child(2), .component > div:nth-child(3) {
+    text-align: center;
+    width: 30%;
+}
+.active {
+    color: rgb(0, 255, 0);
+}

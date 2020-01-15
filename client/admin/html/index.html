@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>admin</title>
+        <link rel="stylesheet" href="../../_html/css/fontawesome.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div id="admin">
+            <h1>Admin</h1>
+            <div id="wrapper">
+                <div class="container containerLeft">
+                    <div class="actionButton" data-view="players">players</div>
+                    <hr>
+                    <div class="actionButton" data-view="spawnVehicle" data-focus="spawnVehicleText">spawn vehicle</div data-view="">
+                    <div class="actionButton" data-action="commands:clearVehicles">clear vehicles</div>
+                    <hr>
+                    <div class="actionButton" data-view="sendServerMessage" data-focus="sendServerMessageText">send server message</div>
+                    <div class="actionButton" data-action="commands:heal">heal</div>
+                    <div class="actionButton" data-action="commands:selectTeam">select team</div>
+                </div>
+                <div class="container containerRight">
+                    <div class="view" id="players">
+                        
+                    </div>
+                    <div class="view" id="spawnVehicle">
+                        <div class="input">
+                            <input type="text" id="spawnVehicleText"><div class="buttonOk" id="spawnVehicleButton">OK</div>
+                        </div>
+                    </div>
+                    <div class="view" id="sendServerMessage">
+                        <div class="input">
+                            <input type="text" id="sendServerMessageText"><div class="buttonOk" id="sendServerMessageButton">OK</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../_html/js/jquery.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
